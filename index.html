@@ -1,58 +1,110 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <!-- Impostazioni base del documento -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio personale di Sisghe" />
-  <title>Portfolio – Sisghe</title>
+  <meta name="description" content="Portfolio personale di Andrea Ercoli – Junior Web Developer">
+  <title>Portfolio – Andrea Ercoli</title>
 
-  <!-- Collegamento ai fogli di stile -->
   <link rel="stylesheet" href="style.css" />
-
-  <!-- Importazione font Google -->
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <!-- HEADER: titolo e navigazione -->
+    <!-- 🎨 Canvas per lo sfondo dinamico -->
+    <canvas id="space-bg"></canvas>
+  <!-- =======================
+       HEADER
+  ======================== -->
   <header>
-    <h1>Sisghe</h1>
+    <h1>Andrea Ercoli</h1>
     <nav>
       <a href="#home">Home</a>
       <a href="#projects">Progetti</a>
+      <a href="#skills">Competenze</a>
       <a href="#contact">Contatti</a>
     </nav>
   </header>
 
-  <!-- MAIN: sezioni principali -->
+
+  <!-- =======================
+     Miniatura CV + Download
+======================= -->
+<div class="cv-container">
+  <img src="assets/cv-preview.jpg" alt="CV di Andrea Ercoli" id="cv-thumb">
+  <a href="assets/Andrea_Ercoli_CV.pdf" download>📥 Scarica il mio CV</a>
+</div>
+
+<!-- Overlay per ingrandimento -->
+<div id="cv-overlay">
+  <span id="close-overlay">✖</span>
+  <img src="assets/Andrea_Ercoli_CV_preview.jpg" alt="CV ingrandito">
+</div>
+
+
   <main>
 
-    <!-- Sezione Home: presentazione -->
+    <!-- =======================
+         HOME
+    ======================== -->
     <section id="home">
-      <h2>Ciao! 👋</h2>
-      <p>Benvenuto nel mio portfolio personale. Scopri chi sono e cosa faccio.</p>
+      <h2>👋 Ciao, sono Andrea</h2>
+      <p id="typed-text"><span id="typed-content"></span><span class="cursor">|</span></p>
     </section>
+    
 
-    <!-- Sezione Progetti: elenco lavori -->
+    <!-- =======================
+         PROGETTI
+    ======================== -->
     <section id="projects">
-      <h2>Progetti</h2>
-      <!-- Qui andranno le card dei progetti -->
+      <h2>🛠️ Progetti</h2>
+      <div class="project-list">
+        <div class="project-card">
+          <h3>ProgettoTree</h3>
+          <p>Gestione prenotazioni ristorante – Java (OOP).</p>
+          <a href="https://github.com/Sisghe/ProgettiTree" target="_blank">🔗 GitHub</a>
+        </div>
+        <div class="project-card">
+          <h3>Curriculum Online</h3>
+          <p>CV web-based con HTML, CSS, responsive design.</p>
+          <a href="https://github.com/Sisghe/Curriculum" target="_blank">🔗 GitHub</a>
+        </div>
+      </div>
     </section>
 
-    <!-- Sezione Contatti: email e social -->
+    <!-- =======================
+         COMPETENZE
+    ======================== -->
+    <section id="skills">
+      <h2>💼 Competenze</h2>
+      <ul>
+        <li>🧠 Linguaggi: Python, Java, C/C++, JavaScript, HTML5, CSS3, SQL</li>
+        <li>🛠️ Strumenti: Git & GitHub, Bash</li>
+        <li>🎓 Formazione: Sicurezza Informatica, OOP, Web Development</li>
+        <li>🤝 Soft Skills: Teamwork, Time Management, Comunicazione</li>
+      </ul>
+    </section>
+
+    <!-- =======================
+         CONTATTI
+    ======================== -->
     <section id="contact">
-      <h2>Contatti</h2>
-      <!-- Link email, LinkedIn, GitHub -->
+      <h2>📬 Contatti</h2>
+      <p>Email: <a href="mailto:jobae2001@gmail.com">jobae2001@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/AndreaErcoli" target="_blank">www.linkedin.com/in/AndreaErcoli</a></p>
+      <p>GitHub: <a href="https://github.com/Sisghe" target="_blank">github.com/Sisghe</a></p>
+      <p>Telefono: +39 351 988 4908</p>
     </section>
 
   </main>
 
-  <!-- FOOTER: informazioni finali -->
+  <!-- =======================
+       FOOTER
+  ======================== -->
   <footer>
-    <p>© 2025 – Sisghe</p>
+    <p>© 2025 – Andrea Ercoli. Tutti i diritti riservati.</p>
   </footer>
 
-  <!-- Collegamento script JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
