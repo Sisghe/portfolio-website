@@ -40,14 +40,14 @@
 .cv-container img:hover {
   transform: scale(1.05);
 }
-
+/*
 .cv-container a {
   display: block;
   margin-top: 0.3rem;
   font-size: 0.8rem;
   color: #00ffc3;
   text-decoration: none;
-}
+}*/
 
 /* Overlay CV ingrandito */
 #cv-overlay {
@@ -118,6 +118,7 @@ section {
   margin: 2rem 0;
   padding: 1rem 0;
   border-bottom: 1px solid #333;
+
 }
 
 h2 {
@@ -133,11 +134,12 @@ h2 {
 }
 
 .project-card {
-  background-color: #2a2a2a;
+  background-color: rgba(42, 42, 42, 0.5);
   border: 1px solid #444;
   padding: 1rem;
   border-radius: 8px;
   transition: transform 0.2s ease;
+
 }
 
 .project-card:hover {
